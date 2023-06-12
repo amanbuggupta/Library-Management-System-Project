@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="allStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+      integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+      crossorigin="anonymous"
+    />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a class="nav-btn" href="/">HOME</a>
+        <a class="nav-btn" href="dashboard.html">DASHBOARD</a>
+        <a class="nav-btn active" href="myBooks.html">MY BOOKS</a>
+        <a class="nav-btn" href="bookmark.html">BOOKMARK</a>
+      </nav>
+      <br />
+      <div class="list">
+        <h1 class="heading">MY BOOKS</h1>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Description</th>
+              <th>Added Date</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- DOM Elements -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="myBooks.js"></script>

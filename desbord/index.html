@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="allStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+      integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+      crossorigin="anonymous"
+    />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a class="nav-btn active" href="/">HOME</a>
+        <a class="nav-btn" href="dashboard.html">DASHBOARD</a>
+        <a class="nav-btn" href="myBooks.html">MY BOOKS</a>
+        <a class="nav-btn" href="bookmark.html">BOOKMARK</a>
+      </nav>
+
+      <center>
+        <form action="" id="form">
+          <h1>Library Management System</h1>
+          <input type="text" placeholder="Book Name" />
+          <input type="text" placeholder="Author Name" />
+          <input type="text" placeholder="Book Description" />
+          <div>
+            <label for="">Adding Date:-</label>
+            <input type="date" />
+          </div>
+          <select name="category" id="category" title="cat">
+            <option value="sports">sports</option>
+            <option value="fiction">fiction</option>
+            <option value="finance">finance</option>
+            <option value="Education">Education</option>
+          </select>
+
+          <input type="number" placeholder="Book's Price" />
+          <button type="submit">Submit</button>
+        </form>
+      </center>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="allStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+      integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9"
+      crossorigin="anonymous"
+    />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a class="nav-btn" href="/">HOME</a>
+        <a class="nav-btn active" href="dashboard.html">DASHBOARD</a>
+        <a class="nav-btn" href="myBooks.html">MY BOOKS</a>
+        <a class="nav-btn" href="bookmark.html">BOOKMARK</a>
+      </nav>
+      <br />
+      <div id="total"></div>
+      <br />
+      <div class="filter-sort">
+        <select name="category" id="filter-category" title="cat">
+          <option value="all">Filter by Category</option>
+          <option value="sports">sports</option>
+          <option value="fiction">fiction</option>
+          <option value="finance">finance</option>
+          <option value="Education">Education</option>
+        </select>
+        <select name="" id="sort" title="sort">
+          <option value="all">Sort By Price</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to High</option>
+        </select>
+      </div>
+      <div class="list">
+        <h1 class="heading">DASHBOARD DATA</h1>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Description</th>
+              <th>Added Date</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Buy</th>
+              <th>bookmark</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- DOM Elements -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="dashboard.js"></script>
